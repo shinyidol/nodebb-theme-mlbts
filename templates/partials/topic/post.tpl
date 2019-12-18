@@ -7,21 +7,6 @@
 			<i component="post/edit-indicator" class="fa fa-pencil-square pointer edit-icon <!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->"></i>
 			<small data-editor="{posts.editor.userslug}" component="post/editor" class="hidden">[[global:last_edited_by, {posts.editor.username}]] <span class="timeago" title="{posts.editedISO}"></span></small>
 		</div>
-		<!-- IF !reputation:disabled -->
-		<div class="votes pull-right">
-			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
-				<i class="fa fa-chevron-up"></i>
-			</a>
-
-			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
-
-			<!-- IF !downvote:disabled -->
-			<a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
-				<i class="fa fa-chevron-down"></i>
-			</a>
-			<!-- ENDIF !downvote:disabled -->
-		</div>
-		<!-- ENDIF !reputation:disabled -->
 	</div>
 </div>
 <div class="row post">
@@ -66,6 +51,21 @@
 				<a component="post/reply" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
 				<a component="post/quote" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
 			</div>
+				<!-- IF !reputation:disabled -->
+				<div class="votes pull-right">
+					<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
+						<i class="fa fa-heart"></i>
+					</a>
+
+					<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
+
+					<!-- IF !downvote:disabled -->
+					<a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
+						<i class="fa fa-chevron-down"></i>
+					</a>
+					<!-- ENDIF !downvote:disabled -->
+				</div>
+				<!-- ENDIF !reputation:disabled -->
 
 			<!-- IMPORT partials/topic/post-menu.tpl -->
 		</div>
