@@ -1,1 +1,1 @@
-# nodebb-theme-mlbts
+# mlbts nodebb theme based on slick
