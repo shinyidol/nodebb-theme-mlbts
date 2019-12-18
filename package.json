@@ -1,0 +1,25 @@
+{
+  "name": "nodebb-theme-mlbts",
+  "version": "0.0.1",
+  "nbbpm": {
+    "compatibility": "^1.11.0"
+  },
+  "description": "MLBTS theme based on slick",
+  "main": "theme.less",
+  "keywords": [
+    "nodebb",
+    "slick",
+    "theme",
+    "themes"
+  ],
+  "author": {
+    "name": "collin",
+    "email": "collin.moore@sony.com"
+  },
+  "maintainers": [
+    {
+      "name": "collin",
+      "email": "collin.moore@sony.com"
+    }
+  ]
+}
