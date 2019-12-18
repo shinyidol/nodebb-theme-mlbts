@@ -1,11 +1,15 @@
 {
-  "name": "nodebb-theme-mlbts",
+  "name": "nodebb-mlbts",
   "version": "0.0.1",
   "nbbpm": {
     "compatibility": "^1.11.0"
   },
-  "description": "MLBTS theme based on slick",
+  "description": "MLBTS theme based on Slick theme for NodeBB",
   "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinyidol/nodebb-theme-mlbts.git"
+  },
   "keywords": [
     "nodebb",
     "slick",
@@ -13,13 +17,16 @@
     "themes"
   ],
   "author": {
-    "name": "collin",
-    "email": "collin.moore@sony.com"
+    "name": "shinyidol",
+    "email": "shinyidol@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/shinyidol/nodebb-theme-mlbts/issues"
   },
   "maintainers": [
     {
-      "name": "collin",
-      "email": "collin.moore@sony.com"
+      "name": "shinyidol",
+      "email": "shinyidol@gmail.com"
     }
   ]
 }

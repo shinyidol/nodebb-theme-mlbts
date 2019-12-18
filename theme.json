@@ -2,6 +2,6 @@
     "id": "nodebb-theme-mlbts",
     "name": "mlbts theme",
     "description": "MLBTS theme based on Slick theme for NodeBB",
-    "url": "https://github.com/pichalite/nodebb-theme-slick",
+    "url": "https://github.com/shinyidol/nodebb-theme-mlbts",
     "screenshot": "screenshot.png"
 }
