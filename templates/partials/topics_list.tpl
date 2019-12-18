@@ -44,6 +44,14 @@
 				<!-- ENDIF !topics.noAnchor -->
 
 				<small>
+				<!-- IF topics.tags.length -->
+				<span class="tag-list hidden-xs">
+					{{{each topics.tags}}}
+					<a href="{config.relative_path}/tags/{topics.tags.value}"><span class="tag" style="<!-- IF topics.tags.color -->color: {topics.tags.color};<!-- ENDIF topics.tags.color --><!-- IF topics.tags.bgColor -->background-color: {topics.tags.bgColor};<!-- ENDIF topics.tags.bgColor -->">{topics.tags.valueEscaped}</span></a>
+					{{{end}}}
+					<small>&bull;</small>
+				</span>
+				<!-- ENDIF topics.tags.length -->
 					<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->">{topics.user.username}</a> &bull; <span class="timeago" title="{topics.timestampISO}"></span>
 				</small>
     		</div>

@@ -50,7 +50,7 @@
 			<div class="post-tools">
 				<a component="post/reply" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
 				<a component="post/quote" href="#" class="no-select <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
-			</div>
+
 				<!-- IF !reputation:disabled -->
 				<div class="votes pull-right">
 					<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
@@ -66,6 +66,9 @@
 					<!-- ENDIF !downvote:disabled -->
 				</div>
 				<!-- ENDIF !reputation:disabled -->
+
+			</div>
+
 
 			<!-- IMPORT partials/topic/post-menu.tpl -->
 		</div>
